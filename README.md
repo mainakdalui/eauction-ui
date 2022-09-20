@@ -18,6 +18,7 @@ npm -v
 
 ## Install Angular CLI
 npm install -g @angular/cli
+ng add @angular/material
 
 ## Command for angular CLI version
 ng version
