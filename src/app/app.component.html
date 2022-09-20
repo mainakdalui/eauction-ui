@@ -1,20 +1,16 @@
 <app-header></app-header>
 
-<mat-expansion-panel class="input-expansion-panel">
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Bid Listing by product-id
-    </mat-panel-title>
-  </mat-expansion-panel-header>
+<mat-form-field class="input-expansion-panel" appearance="fill">
+  <p>Product Bids</p>
   <div class="input-form">
     <mat-form-field>
-      <input matInput [(ngModel)]="productId" name="productId" type="text" placeholder="Enter product id">
+      <input matInput [(ngModel)]="productId" name="productId" type="text" placeholder="Enter product id *">
     </mat-form-field>
     <div class="submit-btn-wrapper">
-      <button mat-button (click)="getBidList()">Get List - {{ productId}}</button>
+      <button mat-button (click)="getBidList()">SUBMIT</button>
     </div>
   </div>
-</mat-expansion-panel>
+</mat-form-field>
 <div *ngIf="bidList.length != 0">
   <table mat-table [dataSource]="bidList" class="c-form">
     <ng-container matColumnDef="startingPrice">
