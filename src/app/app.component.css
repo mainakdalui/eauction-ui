@@ -1,0 +1,24 @@
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input-expansion-panel {
+    width: 50vw;
+    margin: auto;
+    margin-top: 30px;
+}
+.bid-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.c-form {
+    display: flex;
+    flex-direction: column;
+  }
